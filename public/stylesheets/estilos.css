@@ -1,0 +1,329 @@
+/* background: url(/img/agua.jpg) 50% fixed; */
+/* naranja #d3613c */
+/* azul #3271b8 */
+/* Azul mas claro #079df4 */
+/* font-family: 'Rubik', sans-serif;*/
+/* font-family: 'Teko', sans-serif; */
+
+/* iconos 
+<i class="fab fa-facebook-square"></i>    
+<i class="fab fa-instagram-square"></i>
+<i class="fas fa-phone-square-alt"></i>
+<i class="fab fa-whatsapp-square"></i>
+<i class="fas fa-envelope-square"></i>
+ */
+
+ /* aos
+ <div data-aos="fade-right"></div>
+ <div data-aos="fade-left"></div> */
+
+
+body{
+    background: url(../images/agua.jpg);
+    margin: 0;
+    padding: 0 auto; 
+    font-family: 'Rubik', sans-serif;
+    color: white;
+} 
+
+h2{
+    font-weight: 500;
+    border-bottom: 1px solid;
+}
+
+header{
+    background-color: #3271b8;   
+    position: fixed; 
+    width: 100%;
+    z-index: 200;    
+    top: 0;
+}
+
+.header{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px 20px 0;
+}
+
+header img{  
+    border-radius: 10px;
+    width: 200px;
+
+}
+
+header h1{     
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;  
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    bottom: 30px;
+}
+
+main{
+    max-width: 960px;
+    margin: 0 auto; 
+    
+}
+
+nav{   
+    background:#079df4 ;
+    /* margin-bottom: 25px; */
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{   
+    display: inline-block;
+    width: 17%;
+    
+}
+
+nav ul li a{    
+    Color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 10px;
+}
+
+nav ul li a:hover{
+    background-color: #4c76a5;    
+}
+
+
+
+#inicio,#nosotros,#galeria,#distribucion,#contacto{
+    max-width: 960px;
+    background-color:#3271b8;
+    margin-bottom: 30px;
+    padding: 20px;    
+    border-radius: 10px;
+}
+
+
+
+#inicio{   
+    height: 400px; 
+    margin-top: 200px;
+}
+
+#nosotros{
+    height: 600px;    
+}
+
+
+#contacto{    
+    height: 600px;    
+    padding: 20px;    
+}
+
+footer{
+    background-color: #ccc;
+    padding: 15px 0;
+    text-align: center;
+    clear: both;
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* inicio nosotros */
+
+.personas{
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.persona{
+    background-color: white;
+    color: #3271b8;
+    width: 18%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px; 
+    box-sizing: border-box; 
+}
+
+.persona img{
+    max-width: 70%;
+    border-radius: 50%;
+    box-shadow:  0 0 5px rgb(87, 86, 86);
+}
+
+/* fin nosotros */
+
+/* inicio galeria */
+
+.galeria{
+    margin-left: 40px;
+    display: inline-grid;
+    grid-template-areas: 
+    'foto1 foto2 foto2'
+    'foto1 foto4 foto5'
+    'foto3 foto3 foto5'
+    'foto6 foto6 foto6';
+}
+
+.foto1{
+    grid-area: foto1;
+}
+
+.foto2{
+    grid-area: foto2;
+}
+
+.foto3{
+    grid-area: foto3;
+}
+
+.foto4{
+    grid-area: foto4;
+}
+
+.foto5{
+    grid-area: foto5;
+}
+
+.foto6{
+    grid-area: foto6;
+} 
+
+.foto1 .foto2 .foto3 .foto4 .foto5 .foto6
+img{
+    transform: scale(2.5);
+    transition: all 0.3s ease;
+}
+
+.foto1, .foto2, .foto3, .foto4, .foto5, .foto6
+img:hover{
+    cursor: pointer;
+    transform: scale(1);
+    
+}
+
+
+/* fin galeria */
+
+/* inicio distribucion */
+
+.distribuidores{
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.distribuidor{
+    background-color: white;
+    color: #3271b8;
+    width: 18%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px; 
+    box-sizing: border-box; 
+    margin: 10px;
+}
+
+.distribuidor img{
+    max-width: 70%;
+    border-radius: 50%;
+    box-shadow:  0 0 5px rgb(87, 86, 86);
+}
+
+.zona{
+    width: 100%;
+}
+
+/* fin distribucion */
+
+/*  inicio de contacto */
+
+.formulario input,
+.formulario textarea{
+    background-color: #ccc;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 5px;
+    /* width: 70%; opcion 1 */
+    width: 93%; /*opcion 2*/
+}
+
+.formulario label{
+    /* background-color: yellow; */
+    width: 22%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.formulario textarea{
+    resize: none;
+    height: 200px;
+}
+
+.formulario input[type="submit"] {
+    width: auto;
+    background-color: #6da9ed;
+    color: white;
+    box-shadow: 0 0 5px white;
+}
+
+.centrar { 
+    /* background-color: red; */
+    text-align: center;
+}
+
+.contacto,
+.redes{
+    width: 50%;
+    box-sizing: border-box;
+    
+}
+
+.contacto{
+    float: left;
+    border-right: 2px solid #2e64a1;
+}
+
+.redes{
+    float: right;
+    padding-left: 10px;
+}
+
+.redes ul{
+    list-style-type: none;
+}
+
+.redes ul li a{
+    text-decoration: none;    
+}
+
+.mapa iframe{
+   width: 70%;
+   height: 100%;
+   margin: 10% 15%;
+}
+
+.fab, .fas{
+    color: #ccc;
+    font-size: 15px;
+}
+
+.redes ul li a{
+    color: white;
+}
+
+.redes ul li a:hover{
+    color:black;
+}
+
+/* fin de contacto */
