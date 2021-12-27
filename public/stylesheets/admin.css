@@ -1,0 +1,18 @@
+.header{
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.header h1{
+   position: static;
+}
+
+.container{
+    margin: 200px auto;
+    background:#079df4 ;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 960px;
+    
+}
