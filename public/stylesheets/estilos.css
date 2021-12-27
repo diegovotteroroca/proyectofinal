@@ -32,11 +32,12 @@ h2{
 }
 
 header{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
     background-color: #3271b8;
     width: 100%;
-    top: 0;
-    position: fixed;
-    z-index: 200;
+    
 }
 
 .header{

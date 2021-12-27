@@ -123,27 +123,28 @@
         <div data-aos="fade-right">
             <h2>Contacto</h2>
             <div class="contacto">
-                <form action="" class="formulario">
+                <form action="/routes/index.js" method="post" class="formulario">
                     <p>
                         <label for="">Nombre</label>
-                        <input type="text" required>
+                        <input type="text" name="nombre" required >
                     </p>
                     <p>
                         <label for="">Email</label>
-                        <input type="email" required>
+                        <input type="email" name="email" required>
                     </p>
                     <p>
                         <label for="">Teléfono</label>
-                        <input type="text" required>
+                        <input type="text" name="tel" required>
                     </p>
                     <p>
                         <label for="">Comentarios</label>
-                        <textarea name="" required></textarea>
+                        <textarea name="comentarios" required></textarea>
                     </p>
                     <p class="centrar">
                         <input type="submit" value="Enviar">
                     </p>
                 </form>
+                <p>{{message}}</p>
             </div>
             <div class="redes">
                 <h2>Otras vías de contacto</h2>
