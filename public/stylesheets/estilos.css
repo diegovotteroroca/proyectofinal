@@ -32,11 +32,11 @@ h2{
 }
 
 header{
-    background-color: #3271b8;   
-    position: fixed; 
+    background-color: #3271b8;
     width: 100%;
-    z-index: 200;    
     top: 0;
+    position: fixed;
+    z-index: 200;
 }
 
 .header{
@@ -108,13 +108,13 @@ nav ul li a:hover{
 
 
 #inicio{   
-    height: 400px; 
+    /* height: 400px; */ 
     margin-top: 200px;
 }
 
-#nosotros{
+/* #nosotros{
     height: 600px;    
-}
+} */
 
 
 #contacto{    
