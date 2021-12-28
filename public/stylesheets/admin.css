@@ -1,7 +1,8 @@
 .header{
     text-align: center;
     padding: 20px;
-    
+   /*  position: fixed;
+    z-index: 100px; */
 }
 
 .header h1{
@@ -10,9 +11,10 @@
 
 .container{
     margin: 200px auto;
-    background:#079df4 ;
+    background:#3271b8;
     padding: 30px;
     border-radius: 10px;
     max-width: 960px;
     
 }
+
