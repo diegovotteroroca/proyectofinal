@@ -48,4 +48,16 @@ router.post('/agregar', async function (req,res,next) {
   }  
 });
 
+/*funcionamiento de eliminar*/
+
+router.get('/eliminar/:id', async (req,res,next) => {
+  var id = req.params.id;
+
+  await novedadesModels.deleteNovedadByID(id);
+  res.redirect('/admin/novedades');
+});
+
+
+
+
 module.exports = router;
