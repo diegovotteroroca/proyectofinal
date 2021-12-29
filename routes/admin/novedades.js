@@ -58,18 +58,6 @@ router.get('/eliminar/:id', async (req,res,next) => {
 });
 
 
-/*para que me muestre la vista de modificar*/
-
-router.get('/modificar/:id', async (req,res,next) => {
-  var id = req.params.id;
-  var novedad = await novedadesModels.getNovedadByID(id);
-  
-  res.render('admin/modificar', {
-    layout:'admin/layout',
-    novedad
-  });
-});
-
 
 
 module.exports = router;
