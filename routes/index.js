@@ -16,11 +16,11 @@ router.post('/', async function (req,res,next){
   var nombre = req.body.nombre;
   var email = req.body.email;
   var tel = req.body.tel;
-  var comentarios = req.body.comentarios;
+  var mensaje = req.body.comentarios;
 
   var obj ={
-    to: 'diegovotteroroca@gmail.com',
-    subject: 'Contacto desde la web de transportes',
+    to: 'diego@gmail.com',
+    subject: 'Contacto desde la web de soderia Carlos Roca',
     html: nombre + ' se contacto a traves de la web y quiere saber mas info a este correo: ' + email + '.<br> y su Comentario es: ' + mensaje + ' .'
   }
 
@@ -37,9 +37,8 @@ router.post('/', async function (req,res,next){
   var info = await transport.sendMail(obj); //envio de los datos
 
   res.render('index', {
-    message: 'Mensaje enviado correctamente'
-    /* isIndex: true; */
-  })
+    message: 'Mensaje enviado correctamente'    
+  });
 
 });
 

@@ -32,9 +32,9 @@ h2{
 }
 
 header{
-    position: fixed;
+    /* position: fixed;
     z-index: 1000;
-    top: 0;
+    top: 0; */
     background-color: #3271b8;
     width: 100%;
     
@@ -64,7 +64,6 @@ header h1{
 main{
     max-width: 960px;
     margin: 0 auto; 
-    
 }
 
 nav{   
@@ -109,13 +108,10 @@ nav ul li a:hover{
 
 
 #inicio{   
-    /* height: 400px; */ 
-    margin-top: 200px;
+    margin-top: 30px;
 }
 
-/* #nosotros{
-    height: 600px;    
-} */
+
 
 
 #contacto{    
@@ -233,13 +229,10 @@ img:hover{
     padding: 8px; 
     box-sizing: border-box; 
     margin: 10px;
+    transition: all 0,5 ease-in-out;
 }
 
-.distribuidor img{
-    max-width: 70%;
-    border-radius: 50%;
-    box-shadow:  0 0 5px rgb(87, 86, 86);
-}
+ 
 
 .zona{
     width: 100%;
